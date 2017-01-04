@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Request, Response} from 'angular2/http';
 import { ApiService } from '../api-service';
 
 
@@ -13,11 +12,18 @@ export class ListUsersComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
+<<<<<<< HEAD
     this.apiService.postTodo({a:4543545})
       .subscribe(r => {
         console.log(r);
 
       });
+=======
+    console.log('sdcsdcsdcsd');
+    this.apiService.postTodo({a:4543545}).subscribe((r) => {
+
+    });
+>>>>>>> 2a65410a45bb589442ccc2bd25463b81d2e28cef
   }
 
 }
