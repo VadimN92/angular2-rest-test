@@ -13,7 +13,11 @@ export class ListUsersComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.apiService.postTodo({a:4543545});
+    this.apiService.postTodo({a:4543545})
+      .subscribe(r => {
+        console.log(r);
+
+      });
   }
 
 }
